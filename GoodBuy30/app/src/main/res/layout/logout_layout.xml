@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/dialog_circle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:padding="15dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_error_black_24dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/shopping_cart_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您現在正在嘗試登出"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/shopping_cart_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="確定要登出嗎?"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/logout_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="登出"
+                android:background="@drawable/button_round02"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/green"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:background="@drawable/button_round01"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

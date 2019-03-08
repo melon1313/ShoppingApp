@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favorite_toolbar_star"
+        android:icon="@android:drawable/btn_star"
+        android:orderInCategory="1"
+        android:title="@string/shopping_cart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/favorite_toolbar_add"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="2"
+        android:title="@string/message"
+        app:showAsAction="ifRoom" />
+</menu>

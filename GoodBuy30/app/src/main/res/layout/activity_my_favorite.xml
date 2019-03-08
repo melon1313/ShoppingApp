@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/super_gray"
+    android:orientation="vertical"
+    tools:context=".Activity.ShoppingCartActivity">
+
+    <include
+        android:id="@+id/favorite_toolbar"
+        layout="@layout/basic_tool_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/favorite_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/favorite_toolbar"
+        android:visibility="visible"/>
+    <LinearLayout
+        android:id="@+id/no_love_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite_toolbar"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_sun"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:text="快加入喜愛商品吧"
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

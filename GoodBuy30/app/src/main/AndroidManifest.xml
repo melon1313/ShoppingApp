@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chris.goodbuy2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="GoodBuy熊好買"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.AddItemToSell"
+            android:label="新增商品頁"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.AcountPagesActivity"
+            android:label="個人帳戶頁"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ShoppingCartActivity"
+            android:label="@string/shopping_cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TotalMessageActivity"
+            android:label="@string/search"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:parentActivityName=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/search_style" />
+        <activity
+            android:name=".Activity.ClassificationActivity"
+            android:label="@string/shopping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/login_text_style" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity> <!-- FCM設定檔 -->
+        <service android:name=".Service.MyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- FCM設定檔 -->
+        <activity android:name=".Activity.ProductsActivity" />
+        <activity
+            android:name=".Activity.ItemProductActivity"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Activity.RatingActivity" />
+        <activity android:name=".Activity.MyFavoriteActivity"></activity>
+    </application>
+
+</manifest>

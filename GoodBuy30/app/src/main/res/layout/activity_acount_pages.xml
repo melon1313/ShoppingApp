@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AcountPagesActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/basic_tool_bar"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/toolbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_below="@+id/toolbar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/titlePic">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:contentDescription="user_acount_title"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/acount_title_background" />
+                <TextView
+                    android:id="@+id/big_title_acount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="35dp"
+                    android:text="GoodBuy維護人員"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar_layout"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/nametitle_acount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25dp"
+            android:text="使用者名稱:" />
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/name_acount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="25dp"
+                android:text="GoodBuy維護人員" />
+
+            <TextView
+                android:id="@+id/change_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp"
+                android:background="@drawable/texviewbutton_selector_background"
+                android:text="修改名稱"
+                android:visibility="visible"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray"
+            android:text="" />
+        <TextView
+            android:id="@+id/change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:text="修改密碼"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/texviewbutton_selector_background"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray"
+            android:text="" />
+        <TextView
+            android:id="@+id/contacttitle_acount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:paddingTop="10dp"
+            android:text="聯絡方式:" />
+
+        <TextView
+            android:id="@+id/contact_acount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:paddingBottom="10dp"
+            android:text="goodbuybearisgood@gmail.com" />
+        <TextView
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/change_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/texviewbutton_selector_background"
+            android:text="修改聯絡方式"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray"
+            android:text="" />
+    </LinearLayout>
+</RelativeLayout>

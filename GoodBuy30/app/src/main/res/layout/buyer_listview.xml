@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/buyer_list_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/list_icon_buylist"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/buyer_list_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/buy_list"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/buyer_list_img"
+            android:textStyle="bold"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/buyer_list_text2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="180dp"-->
+            <!--android:text="@string/view_all"-->
+            <!--android:textSize="12dp"-->
+            <!--android:layout_toRightOf="@+id/buyer_list_text1"/>-->
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "90417388830",
+    "firebase_url": "https://goodbuy-7040f.firebaseio.com",
+    "project_id": "goodbuy-7040f",
+    "storage_bucket": "goodbuy-7040f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90417388830:android:485215ec9259699f",
+        "android_client_info": {
+          "package_name": "com.example.chris.goodbuy2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90417388830-vpp8eeflktqdjqvsnb3hsnr0nnn6jmqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXZE7_6qetRNu_XY0D8qCHGZJp9VpPnj4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

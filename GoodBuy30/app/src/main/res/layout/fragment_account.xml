@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.AccountFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/nunu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="user_photo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nunu" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/login_logo"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp" />
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="chrisbear"
+                    android:textColor="@color/white"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"></android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/account_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_below="@+id/appbar_layout"
+        app:tabTextColor="@color/green"
+        app:tabIndicatorColor="@color/orange"
+        app:tabTextAppearance="@style/account_tabs_theme"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabRippleColor="@color/baby_orange"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:outlineSpotShadowColor="@color/colorAccent"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/account_pager"
+        android:layout_below="@+id/account_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>

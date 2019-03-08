@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/super_gray"
+    android:orientation="vertical"
+    tools:context=".Activity.ShoppingCartActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/basic_tool_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shopping_cart_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/layout_buttom"/>
+    <!--下面的全選-->
+    <RelativeLayout
+        android:id="@+id/layout_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <include layout="@layout/line_horizon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/iv_cricle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:button="@drawable/check_box_style"
+                android:text="選擇本頁全部商品"
+                android:textColor="@color/gray1" />
+
+            <TextView
+                android:id="@+id/all_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@id/sum_price"
+                android:layout_toRightOf="@id/iv_cricle"
+                android:text="合計：0"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sum_price"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/orange">
+
+            <TextView
+                android:id="@+id/sum_price_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="去買單"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

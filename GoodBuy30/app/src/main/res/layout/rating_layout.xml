@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rating_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/member_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="k******7"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:layout_marginBottom="3dp"/>
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/member_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:theme="@style/RatingBar"
+            android:stepSize="0.1"
+            android:rating="3.2"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/member_name_textview"/>
+        <TextView
+            android:id="@+id/rating_content_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="超讚的商品品質"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/member_rating"/>
+        <TextView
+            android:id="@+id/member_time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019-01-24"
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/rating_content_textview"/>
+    </RelativeLayout>
+    <include layout="@layout/line_horizon"/>
+</LinearLayout>

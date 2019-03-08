@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GoodBuy2</string>
+    <string name="nav_home">熊城</string>
+    <string name="nav_favorite">喜愛</string>
+    <string name="nav_noticfication">通知</string>
+    <string name="nav_account">我的</string>
+    <string name="shopping_cart">購物車</string>
+    <string name="message">熊好聊</string>
+    <string name="search">熊好搜</string>
+    <string name="search_recent">最近搜尋</string>
+    <string name="shopping">逛逛熊好買</string>
+    <string name="tab_buyer">我是買家</string>
+    <string name="tab_seller">我是賣家</string>
+    <string name="buy_list">購買清買</string>
+    <string name="buy_love">我的喜愛</string>
+    <string name="buy_eveluation">我的評價</string>
+    <string name="buy_myaccount">我的帳戶</string>
+    <string name="buy_service">客服中心</string>
+    <string name="view_all">查看全部 ></string>
+    <string name="add_product">新增商品</string>
+    <string name="login_myAccount">我的帳號</string>
+    <string name="login_myPassword">我的密碼</string>
+    <string name="login_forgetPassword">忘記密碼?</string>
+    <string name="login_nosignUpYet">尚未註冊?</string>
+    <string name="login_anotherlogin">其他登入方式</string>
+    <string name="clickMe">點我登入</string>
+    <string name="classifi_womenclothes">女性服飾</string>
+    <string name="classifi_cosmetics">美妝保養</string>
+    <string name="classifi_3c">電腦3C</string>
+    <string name="classifi_application">家電電器</string>
+    <string name="classifi_menclothes">男性服飾</string>
+    <string name="classifi_sports">運動休閒</string>
+    <string name="classifi_books">圖書文具</string>
+    <string name="classifi_lif">居家生活</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">467514216987156</string>
+    <string name="fb_login_protocol_scheme">fb467514216987156</string>
+    <!--以下為凱嵐的DB-->
+    <!--<string name="localDataBase">http://192.168.1.198/final_report/</string>-->
+    <!--<string name="localDataBaseImg">http://192.168.1.198/</string>-->
+
+    <!--以下為凱嵐的DB<本機端>-->
+    <!--<string name="localDataBase">http://10.0.2.2/final_report/</string>-->
+    <!--<string name="localDataBaseImg">http://10.0.2.2/</string>-->
+
+    <!--以下為鵬程的DB-->
+    <!--<string name="localDataBase">http://192.168.1.100/api/</string>-->
+    <!--<string name="localDataBaseImg">http://192.168.1.100/</string>-->
+
+    <!--以下為鵬程的DB<本機端>-->
+    <!--<string name="localDataBase">http://10.0.2.2/api/</string>-->
+    <!--<string name="localDataBaseImg">http://10.0.2.2/</string>-->
+
+    <string name="localDataBase">https://www.goodbuybear.ga/final_report/</string>
+    <string name="localDataBaseImg">https://www.goodbuybear.ga/</string>
+</resources>
